@@ -1,0 +1,133 @@
+@keyframes alert-transition {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+#info-header {
+    background-color: #018df0;
+}
+
+#info-button:hover {
+    color: white;
+    background-color: #018df0;
+}
+
+#confirm-header {
+    background-color: #fcba03;
+}
+
+#confirm-button:hover {
+    color: white;
+    background-color: #fcba03;
+}
+
+#success-header {
+    background-color: #01f084;
+}
+
+#success-button:hover {
+    color: white;
+    background-color: #01f084;
+}
+
+#error-header {
+    background-color: #f03101;
+}
+
+#error-button:hover {
+    color: white;
+    background-color: #f03101;
+}
+
+#delete-header {
+    background-color: #f03101;
+}
+
+#delete-button:hover {
+    color: white;
+    background-color: #f03101;
+}
+
+.alert {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 150px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.alert-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border-radius: 3px;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: alert-transition;
+    -webkit-animation-duration: 0.4s;
+    animation-name: alert-transition;
+    animation-duration: 0.4s
+}
+
+.alert-title {
+    font-size: 140%;
+    text-align: center;
+}
+
+.alert-text {
+    font-size: 90%;
+    text-align: center;
+}
+
+.alert-close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.alert-close:hover,
+.alert-close:focus {
+    color: rgb(218, 218, 218);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.alert-body {
+    padding: 2px 16px;
+}
+
+.alert-header {
+    padding: 2px 16px;
+    color: white;
+    border-radius: 2px;
+}
+
+.alert-actions {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px 0px;
+}
+
+.alert-button {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 3px;
+    border: none;
+    transition: all .2s cubic-bezier(.22, .61, .36, 1);
+}
+
+.alert-button:hover {
+    transform: translateY(-2px);
+    cursor: pointer;
+}
